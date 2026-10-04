@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<HediffDef ParentName="BurnBase">
+		<defName>domom_FlareBurn</defName>
+		<label>burn</label>
+		<labelNoun>a burn</labelNoun>
+		<description>A burn.</description>
+		<comps>
+			<li Class="HediffCompProperties_GetsPermanent">
+				<permanentLabel>burn scar</permanentLabel>
+			</li>
+		</comps>
+		<injuryProps>
+			<destroyedLabel>Burned off</destroyedLabel>
+			<destroyedOutLabel>Burned out</destroyedOutLabel>
+			<canMerge>false</canMerge>
+		</injuryProps>
+	</HediffDef>
+</Defs>
