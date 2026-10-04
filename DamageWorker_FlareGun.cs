@@ -5,7 +5,7 @@ public class DamageWorker_FlareGun : DamageWorker_AddInjury {
 	public override DamageResult Apply(DamageInfo dinfo, Thing victim) {
 		if (victim.IsBurning())
 		{
-			dinfo.SetAmount(dinfo.Amount * 2);
+			dinfo.SetAmount((float) (dinfo.Amount * 2.5));
 		}
 		return base.Apply(dinfo, victim);
 	}
