@@ -57,7 +57,7 @@ public class Bullet_Flare : Bullet {
 	}
 
 	// Stolen from Bullet
-	private void NotifyImpact(Thing hitThing, Map map, IntVec3 position) {
+	protected void NotifyImpact(Thing hitThing, Map map, IntVec3 position) {
 		BulletImpactData impactData = new BulletImpactData() {
 			bullet = this,
 			hitThing = hitThing,

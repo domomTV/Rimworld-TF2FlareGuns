@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<ThingDef ParentName="BaseBullet">
+	<ThingDef ParentName="BaseBullet" Name="BulletFlare">
 		<defName>domom_BulletFlareGun</defName>
 		<thingClass>Bullet_Flare</thingClass>
 		<label>flare</label>
@@ -15,6 +15,7 @@
 			<damageAmountBase>6</damageAmountBase>
 			<stoppingPower>0.5</stoppingPower>
 			<speed>55</speed>
+			<ai_IsIncendiary>True</ai_IsIncendiary>
 		</projectile>
 	</ThingDef>
 	
@@ -32,7 +33,7 @@
 		<soundInteract>Interact_Revolver</soundInteract>
 		<statBases>
 			<WorkToMake>4000</WorkToMake>
-			<Mass>1.4</Mass>
+			<Mass>2</Mass>
 			<AccuracyTouch>0.80</AccuracyTouch>
 			<AccuracyShort>0.75</AccuracyShort>
 			<AccuracyMedium>0.55</AccuracyMedium>
@@ -52,7 +53,7 @@
 		</costList>
 		<recipeMaker>
 			<skillRequirements>
-				<Crafting>3</Crafting>
+				<Crafting>4</Crafting>
 			</skillRequirements>
 			<displayPriority>400</displayPriority>
 		</recipeMaker>
