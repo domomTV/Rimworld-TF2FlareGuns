@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-	<DamageDef ParentName="Flame">
+	<DamageDef Name="BurnFlare" ParentName="Flame">
 		<defName>domom_BurnFlareGun</defName>
 		<label>burn</label>
 		<workerClass>DamageWorker_FlareGun</workerClass>
@@ -13,5 +13,10 @@
 		</igniteChanceByTargetFlammability>
 		<minDamageToFragment>99999</minDamageToFragment>
 		<isRanged>true</isRanged>
+	</DamageDef>
+	
+	<DamageDef ParentName="BurnFlare">
+		<defName>domom_BurnScorchShot</defName>
+		<workerClass>DamageWorker_ScorchShot</workerClass>
 	</DamageDef>
 </Defs>
