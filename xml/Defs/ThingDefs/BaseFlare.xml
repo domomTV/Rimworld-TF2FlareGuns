@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	
+	<ThingDef Name="BaseFlareGun" ParentName="BaseHumanMakeableGun">
+		<possessionCount>1</possessionCount>
+		<uiIconScale>1.4</uiIconScale>
+		<soundInteract>Interact_Revolver</soundInteract>
+		<weaponClasses>
+			<li>RangedLight</li>
+		</weaponClasses>
+		<tools>
+			<li>
+				<label>grip</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+			<li>
+				<label>barrel</label>
+				<capacities>
+					<li>Blunt</li>
+					<li>Poke</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+		</tools>
+	</ThingDef>
+	
+</Defs>
