@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 	
-	<ThingDef Name="BaseFlareGun" ParentName="BaseHumanMakeableGun">
+	<ThingDef Name="BaseFlareGun" ParentName="BaseHumanMakeableGun" Abstract="True">
 		<possessionCount>1</possessionCount>
 		<uiIconScale>1.4</uiIconScale>
 		<soundInteract>Interact_Revolver</soundInteract>

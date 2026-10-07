@@ -3,18 +3,15 @@
 
 	<ThingDef ParentName="BulletFlare">
 		<defName>domom_BulletScorchShot</defName>
-		<thingClass>Bullet_Flare</thingClass>
-		<label>flare</label>
-		<graphicData>
-			<texPath>Things/Projectile/Bullet_Small</texPath>
-			<color>(199, 60, 32)</color>
-			<graphicClass>Graphic_Single</graphicClass>
-		</graphicData>
-		<projectile>
-			<damageDef>domom_BurnScorchShot</damageDef>
-			<damageAmountBase>4</damageAmountBase>
+		<thingClass>Projectile_Explosive</thingClass>
+		<projectile Inherit="False">
+			<damageDef>domom_BurnFlareGun</damageDef>
+			<damageAmountBase>3</damageAmountBase>
 			<stoppingPower>0.5</stoppingPower>
 			<speed>55</speed>
+			<explosionRadius>1.1</explosionRadius>
+			<explosionChanceToStartFire>0.5</explosionChanceToStartFire>
+			<screenShakeFactor>0</screenShakeFactor>
 			<ai_IsIncendiary>True</ai_IsIncendiary>
 		</projectile>
 	</ThingDef>
@@ -28,13 +25,9 @@
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<statBases>
-			<WorkToMake>4000</WorkToMake>
+			<WorkToMake>6000</WorkToMake>
 			<Mass>2</Mass>
-			<AccuracyTouch>0.80</AccuracyTouch>
-			<AccuracyShort>0.75</AccuracyShort>
-			<AccuracyMedium>0.55</AccuracyMedium>
-			<AccuracyLong>0.40</AccuracyLong>
-			<RangedWeapon_Cooldown>2</RangedWeapon_Cooldown>
+			<RangedWeapon_Cooldown>3.5</RangedWeapon_Cooldown>
 		</statBases>
 		<weaponTags>
 			<li>SimpleGun</li>
@@ -55,12 +48,15 @@
 				<verbClass>Verb_Shoot</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>domom_BulletScorchShot</defaultProjectile>
-				<warmupTime>0.75</warmupTime>
+				<warmupTime>1</warmupTime>
 				<range>19.9</range>
-				<forcedMissRadius>1</forcedMissRadius>
+				<forcedMissRadius>1.1</forcedMissRadius>
 				<soundCast>Shot_Revolver</soundCast>
 				<soundCastTail>GunTail_Light</soundCastTail>
 				<muzzleFlashScale>9</muzzleFlashScale>
+				<targetParams>
+					<canTargetLocations>True</canTargetLocations>
+				</targetParams>
 			</li>
 		</verbs>
 	</ThingDef>
